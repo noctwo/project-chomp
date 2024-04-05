@@ -1,0 +1,38 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Nunito", sans-serif;
+}
+
+nav{
+    width: 100vw;
+    text-align: center;
+}
+
+.logo p{
+    font-family: "Rock Salt", cursive;
+    color: #393939;
+    font-size: 2em;
+}
+/*
+.hero{
+}
+
+.headline{
+
+}
+*/
+h1{
+    color: #ead331;
+    font-size: 2rem;
+    text-align: right;
+}
+
+.hero-image-container{
+    height: 90vh;
+    background-image: url(../img/pug-beanie-02.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: -8em;
+}
