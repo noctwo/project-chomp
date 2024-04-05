@@ -15,24 +15,99 @@ nav{
     color: #393939;
     font-size: 2em;
 }
-/*
-.hero{
-}
 
-.headline{
-
-}
-*/
 h1{
     color: #ead331;
-    font-size: 2rem;
+    font-size: 2.5rem;
     text-align: right;
+    padding-right: 1em;
+    line-height: 1em;
 }
 
 .hero-image-container{
     height: 90vh;
     background-image: url(../img/pug-beanie-02.jpg);
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
-    margin-top: -8em;
+    margin-top: -12.5em;
+}
+
+.howto{
+    
+}
+
+h2{
+    background-color: #ead331;
+    color: #fff;
+    padding: 1em 0;
+    text-align: center;
+}
+
+.step-container{
+    margin: 2em 0;
+    font-size: 1.2rem;
+    font-weight: 200;
+    padding: 0 1em;
+    text-align: center;
+}
+
+.step{
+    color:#ead331;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.menu-container{
+    height: 30vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 2em 1em;
+}
+
+.menu-container-one{
+    background-image: url(../img/begging-img-01.jpg);
+}
+
+.menu-container-two{
+    background-image: url(../img/food.png);
+    background-size: 60%;
+}
+
+.menu-container-three{
+    background-color: #ead331;
+    text-align: center;
+    align-content: center;
+}
+
+footer{
+    background-color:#393939;
+    color: #fff;
+    text-align: center;
+    padding: 2em 2em;
+}
+
+footer p{
+    margin-bottom: 2em;
+}
+
+form{
+ display: flex;
+ flex-direction: column;
+}
+
+input[type="email"], input[type="submit"]{
+    border: none;
+    border-radius: 25px;
+    padding: 1em;
+    margin-bottom: 1em;
+}
+
+input[type="submit"]{
+    background-color: #ead331;
+}
+
+
+.social-icons img{
+    width: 2em;
 }
