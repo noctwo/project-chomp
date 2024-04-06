@@ -29,6 +29,7 @@ h1{
     background-image: url(../img/pug-beanie-02.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: bottom;
     margin-top: -12.5em;
 }
 
@@ -117,6 +118,13 @@ input[type="submit"]{
 
 @media only screen and (min-width: 601px) and (max-width: 900px){
 
+    .hero-image-container{
+        background-position: center;
+    }
+    .steps{
+        padding: 0 2em;
+    }
+
     .step-container{
         display: flex;
         align-items: center;
@@ -146,8 +154,75 @@ input[type="submit"]{
 }
 
 @media only screen and (min-width: 901px) and (max-width: 1200px){
+    nav{
+        background-color: #fff;
+    }
+    .hero{
+        background-color: #ead331;
+        display: flex;
+        justify-content: right;
+    }
+
+    .hero-image-container{
+        width: 50%;
+        max-height: 60vh;
+        margin-top:0;
+        background-position: bottom;
+    }
+
+    h1{
+        color: #fff;
+    }
+
+    h2{
+        background-color: transparent;
+        color: #ead331;
+        font-size: 3.5em;
+    }
+
+    .steps{
+        display: flex;
+        justify-content: space-around;
+        gap: 1em;
+    }
+    .step-container{
+        background-color: #fff;
+        width: 30%;
+        border-radius: 10px;
+        padding: 1em;
+        -webkit-box-shadow: 10px 10px 38px -25px rgba(0,0,0,1);
+        -moz-box-shadow: 10px 10px 38px -25px rgba(0,0,0,1);
+        box-shadow: 10px 10px 38px -25px rgba(0,0,0,1);
+    }
+
+    .menu{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 2em;
+    }
+
+    .menu-container{
+        width: 30%;
+        border-radius: 10px;
+    }
+
+    .menu h2{
+        width: 100%;
+    }
+
+    .footer-end{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+}
+
+@media only screen and (min-width: 1201px){
+
     body{
-        background-color: green;
+        max-width: 1201px;
+        margin: 0 auto;
     }
 }
 
