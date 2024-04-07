@@ -118,6 +118,10 @@ input[type="submit"]{
 
 @media only screen and (min-width: 601px) and (max-width: 900px){
 
+    h1{
+        font-size: 3em;
+    }
+
     .hero-image-container{
         background-position: center;
     }
@@ -137,6 +141,10 @@ input[type="submit"]{
         flex-wrap: wrap;
     }
 
+    .menu-container{
+        max-height: 25vh;
+    }
+
     .menu h2, .menu-container-three{
         width: 100%;
         background-color: transparent;
@@ -153,7 +161,14 @@ input[type="submit"]{
     }
 }
 
-@media only screen and (min-width: 901px) and (max-width: 1200px){
+@media only screen and (min-width: 901px) and (max-width: 1200px){  
+    h1{
+        padding: 1em 1em 0 0;
+        font-size: clamp(3rem, 4vw, 5rem);
+        color: #fff;
+        flex-basis: 50%;
+        flex-grow: 0;
+    }
     nav{
         background-color: #fff;
     }
@@ -164,14 +179,10 @@ input[type="submit"]{
     }
 
     .hero-image-container{
-        width: 50%;
+        width: 50vw;
         max-height: 60vh;
         margin-top:0;
         background-position: bottom;
-    }
-
-    h1{
-        color: #fff;
     }
 
     h2{
@@ -187,7 +198,9 @@ input[type="submit"]{
     }
     .step-container{
         background-color: #fff;
+        align-content: center;
         width: 30%;
+        min-height: 20vh;
         border-radius: 10px;
         padding: 1em;
         -webkit-box-shadow: 10px 10px 38px -25px rgba(0,0,0,1);
@@ -200,11 +213,13 @@ input[type="submit"]{
         flex-wrap: wrap;
         justify-content: space-around;
         gap: 2em;
+        margin-bottom: 2em;
     }
 
     .menu-container{
         width: 30%;
         border-radius: 10px;
+        max-height: 20vh;
     }
 
     .menu h2{
@@ -223,6 +238,80 @@ input[type="submit"]{
     body{
         max-width: 1201px;
         margin: 0 auto;
+    }
+
+    nav{
+        background-color: #fff;
+        max-width: 1201px;
+    }
+    .hero{
+        background-color: #ead331;
+        display: flex;
+        justify-content: right;
+        
+    }
+
+    .hero-image-container{
+        width: 50%;
+        max-height: 60vh;
+        margin-top:0;
+        background-position: bottom;
+    }
+
+    h1{
+        padding: 1em 1em 0 1em;
+        font-size: clamp(3rem, 4vw, 5rem);
+        color: #fff;
+        flex-basis: 50%;
+        flex-grow: 0;
+    }
+
+    h2{
+        background-color: #e5e5e5;
+        color: #ead331;
+        font-size: 3.5em;
+    }
+
+    .steps{
+        display: flex;
+        justify-content: space-around;
+        gap: 1em;
+    }
+    .step-container{
+        background-color: #fff;
+        width: 30%;
+        min-height: 15vh;
+        align-content: center;
+        border-radius: 10px;
+        padding: 1em;
+        -webkit-box-shadow: 10px 10px 38px -25px rgba(0,0,0,1);
+        -moz-box-shadow: 10px 10px 38px -25px rgba(0,0,0,1);
+        box-shadow: 10px 10px 38px -25px rgba(0,0,0,1);
+    }
+
+    .menu{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 2em;
+        margin-bottom: 2em;
+    }
+
+    .menu-container{
+        width: 30%;
+        border-radius: 10px;
+        max-height: 20vh;
+    }
+
+    .menu h2{
+        width: 100%;
+        background-color: transparent;
+    }
+
+    .footer-end{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
     }
 }
 
